@@ -1,0 +1,440 @@
+:root{
+
+  --margin-left: 2%;
+  --margin-top : 3%;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #fff; 
+   font-style: italic;
+}
+header{
+    background-color: #001f3f;
+    
+  
+}
+nav{
+
+   display: flex;
+   justify-content: space-between;
+   justify-items: center;
+   align-items: center;
+}
+.nav-l{
+    width: 30%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 1%;
+    
+}
+.nav-l h1 {
+    margin-left: 26%;
+}
+.nav-mid{
+    width: 40%;
+    /* margin-top: var(--margin-top); */
+}
+.nav-r{
+    width: 20%;
+    /* margin-top: var(--margin-top); */
+}
+nav .nav-l{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+nav .nav-l img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+nav .nav-mid ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+ 
+}
+
+nav .nav-r ul {
+    display: flex;
+    list-style: none;
+   
+    
+}
+nav .nav-mid ul li a {
+    text-decoration: none;
+    
+    
+}
+
+nav .nav-r ul a{
+    text-decoration: none;
+}
+nav .nav-mid a:hover , nav .nav-r a:hover {
+  color: #0074D9;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+   
+}
+nav .nav-r button{
+    color: black;
+    height: 30px;
+    width: 50px;
+    background-color: #67a8e9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+nav .nav-r button:hover{
+    background-color: #005BB5;
+}
+
+
+
+
+/* *********************************home ********************************************* */
+
+#home{
+    background-image: url(img/bg_home.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+   
+ 
+
+}
+.auto_home{
+   padding: 200px 0px;
+   width: 70%;
+}
+  
+.auto-type  {
+    color: white ;
+    
+}
+.auto_home h1{
+    font-size: 4vw;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+#how-it {
+    width: 100%;
+    height: 100%;
+    margin-top: 44%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background-color: #8fc7ff;
+    margin-right: 100px;
+    
+
+}
+#how-it p,h1,h4,h3{
+    color: black;
+    
+    text-align: center;
+    justify-items: center;
+    text-align: justify;
+}
+.sec2{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-justify: flex; 
+
+}
+.sec2 img{
+    height: 400px;
+    width: 600px;
+    border-radius: 5%;
+}
+.heading{
+    float: left;
+}
+
+
+
+#sec3{
+    height: 100%;
+    width: 100%;
+    background-color:  #67a8e9;
+}
+#sec3 .comm{
+    margin-left: 45%;
+    font-size: 35px;
+}
+#sec3 .team {
+    width: 70%;
+}
+.community{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.com1 {
+    height: 390px;
+    width: 350px;
+   border: 3px solid #333;
+    justify-content: center;
+    margin-left: 3%;
+  
+}
+.team {
+    color: black;
+    
+}
+.com1 h3{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.com1 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 3%;
+}
+#sec3 text {
+    color: red;
+}
+.community :hover{
+    cursor: pointer;
+    background-color: #c1cc2d;
+}
+
+/* ************************* foooter ************************** */
+
+
+footer{
+    height: 18%;
+
+    background-color:  #001f3f;
+   
+    justify-content: center;
+}
+footer a{
+    color: #fff;
+    margin-left: 45%;
+}
+footer h1
+{
+    margin-left: 45%;
+    color: #fff;
+}
+.blink {
+    
+    color: #ff6347; /* Tomato color */
+    animation: blink-animation 1.5s infinite;
+}
+.blink1 {
+    
+    color: #ff6347; /* Tomato color */
+    animation: blink-animation 3s infinite;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+/* --------------------------------------- media@ + menu --------------------------- */
+
+.closeBtn, .menuBtn {
+    font-size: 30px;
+    display: none;
+    margin-right: 4%;
+}
+#menu {
+    display: none;
+}
+
+@media (max-width : 700px){
+ 
+    
+    nav .nav-mid,.nav-r{
+        display: none;
+        
+    }
+    .menuBtn{
+        display: block ;
+        margin-right: 4%;
+        
+    }
+  
+    #menu{
+        width: 100%;
+        background-color: #001f3f;
+        float: right;
+        line-height: 40px;
+        list-style: none;
+       
+        
+    
+       
+        
+        
+    }
+    #menu a{
+        text-decoration: none;
+        margin-left: 40vw;
+        
+    }
+
+    .login_menu ul a{
+        text-decoration: none;
+    }
+     .login_menu a:hover {
+      color: #0074D9;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+       
+    }
+    .login_menu button{
+        color: black;
+        height: 40px;
+        width: 60px;
+        background-color: #0074D9;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        
+        
+    }
+    .login_menu button:hover{
+        background-color: #005BB5;
+    }
+
+    /* ************************************* home media  */
+    
+    .auto_home h1{
+        font-size: 8vw;
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+    #how-it {
+        width: 100%;
+        height: 100%;
+        margin-top: 160%;
+        color: black;
+        justify-content: center;
+        align-items: center;
+     
+        
+    
+    }
+
+ /* --------------------------- how it's whoks ---------------- */
+ #how-it{
+    width: 100%;
+    height: 100%;
+ }
+  .sec2{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .sec2 img{
+    height: 200px;
+    width: 300px;
+    border-radius: 5%;
+}
+
+/* ************************************** community ************ */
+
+#sec3{
+    height: 100%;
+    width: 100%;
+    background-color:  #67a8e9;
+}
+#sec3 .comm{
+    margin-left: 15%;
+    font-size: 35px;
+}
+#sec3 .team {
+    width: 90%;
+}
+.community{
+    height: 100%;
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    gap: 5%;
+}
+.com1 {
+    height: 450px;
+    width: 350px;
+   border: 3px solid #333;
+    justify-content: center;
+    margin-left: 3%;
+  
+}
+.team {
+    color: black;
+    
+}
+.com1 h3{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.com1 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 3%;
+}
+#sec3 text {
+    color: red;
+}
+.community :hover{
+    cursor: pointer;
+    background-color: #c1cc2d;
+}
+
+
+
+footer{
+    height: 10%;
+
+    background-color:  #001f3f;
+   
+    justify-content: center;
+}
+footer a{
+    color: #fff;
+    margin-left: 45%;
+}
+footer h1
+{
+    margin-left: 20%;
+    color: #fff;
+}
+.blink {
+    
+    color: #ff6347; /* Tomato color */
+    animation: blink-animation 1.5s infinite;
+}
+.blink1 {
+    
+    color: #ff6347; /* Tomato color */
+    animation: blink-animation 3s infinite;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+}
+
